@@ -176,7 +176,7 @@ class LandingPage extends StatelessWidget {
                   ),
                 ),
                 InkWell(
-                  onTap: () => {launchImpressum()},
+                  onTap: () => {launchGitHub()},
                   child: const Text('GitHub', style: TextStyle(fontSize: 20)),
                 ),
               ],
@@ -208,4 +208,6 @@ Future<void> launchImpressum() async {
   await launch('https://www.hs-kl.de/en/about');
 }
 
-
+Future<void> launchGitHub() async {
+  await launch('https://github.com/kibu7/HSKL-Portal');
+}
