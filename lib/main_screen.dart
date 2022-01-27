@@ -4,7 +4,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:hskl_portal/dashboard_screen.dart';
-import 'package:percent_indicator/circular_percent_indicator.dart';
 
 import 'Komponenten/side_menu.dart';
 
@@ -19,7 +18,7 @@ class MainScreen extends StatelessWidget {
       body: SafeArea(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+          children: const [
             Expanded(
               flex: 1,
               child:SideMenu(),
